@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-...
-{% if not mood_entries %}
+
+<h1>Book Corner</h1>
+<h5>Name: </h5>
+<p>{{ name }}</p>
+<h5>Class: </h5>
+<p>{{ class }}</p>
+{% if not dataproduct_entries %}
+<h5>Data Product: </h5>
 <p>Belum ada data product pada book corner.</p>
 {% else %}
 <table>
