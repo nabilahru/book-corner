@@ -5,11 +5,11 @@ from django.http import HttpResponse
 from django.core import serializers
 
 def show_main(request):
-    data_products = DataProduct.objects.all()
+    product_entries = DataProduct.objects.all()
     context = {
         'name': 'Nabilah Roslita Utami',
         'class': 'PBP B',
-        'data_products': data_products
+        'product_entries': product_entries
     }
 
     return render(request, "main.html", context)
