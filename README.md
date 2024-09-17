@@ -59,6 +59,10 @@ Selanjutnya adalah menampilkan data dalam bentuk XML dan JSON dan juga berdasark
 Selanjutnya adalah postman sebagai data viewer. caranya adalah send link data yang ingin dilihat. Misalnya melihat data format XML by IDnya [http://localhost:8000/xml/[id]]. maka akan terlihat objek-objek yang sudah dibuat.
 
 ****Screenshoot Postman:****
+![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/XML.png?raw=true)
+![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/json.png?raw=true)
+![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/XML%20by%20ID.png?raw=true)
+![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/JSON%20by%20ID.png?raw=true)
 
 Referensi:
 Amazon. (n. d). Apa Perbedaan antara JSON dan XML? Retrieved September 17, 2024, from https://aws.amazon.com/id/compare/the-difference-between-json-xml/
