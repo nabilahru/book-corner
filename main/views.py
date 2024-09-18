@@ -14,6 +14,7 @@ def show_main(request):
 
     return render(request, "main.html", context)
 
+# Validasi input product
 def create_product_entry(request):
     form = DataProductForm(request.POST or None)
 

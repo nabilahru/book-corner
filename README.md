@@ -59,9 +59,13 @@ Selanjutnya adalah menampilkan data dalam bentuk XML dan JSON dan juga berdasark
 Selanjutnya adalah postman sebagai data viewer. caranya adalah send link data yang ingin dilihat. Misalnya melihat data format XML by IDnya [http://localhost:8000/xml/[id]]. maka akan terlihat objek-objek yang sudah dibuat.
 
 ****Screenshoot Postman:****
+XML
 ![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/XML.png?raw=true)
+JSON
 ![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/json.png?raw=true)
+XML by ID
 ![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/XML%20by%20ID.png?raw=true)
+JSON by ID
 ![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/JSON%20by%20ID.png?raw=true)
 
 Referensi:
