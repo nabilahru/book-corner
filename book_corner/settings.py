@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "nabilah-roslita-bookcorner.pbp.cs.ui
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

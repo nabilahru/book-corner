@@ -8,7 +8,7 @@ Kelas   : PBP B
 
 http://nabilah-roslita-bookcorner.pbp.cs.ui.ac.id/
 
-## Jawaban pertanyaan Tugas Individu 2
+## Tugas Individu 2
 
 ****1. Jelaskan bagaimana cara kamu mengimplementasikan *checklist* di atas secara *step-by-step* (bukan hanya sekadar mengikuti tutorial).****
 Pertama adalah membuat sebuah direktori bernama book-corner. Kemudian mengaktifkan virtual environment pada cmd untuk mengisolasi aplikasi agar tidak bertabrakan dengan versi lainnya. Lalu membuat file requirements.txt di dalam direktori book-corner yang berisi dependencies untuk di-install dengan perintah “pip install -r requirements.txt” pada cmd. Selanjutnya beri perintah “django-admin startproject book-corner .” untuk membuat proyek Django. Setelah itu, melakukan konfigurasi proyek dengan menambahkan allowed_host pada settings.py. Kemudian cek proyek, dengan menjalankan proyeknya dan mengecek di  http://localhost:8000. Hentikan server dengan ctrl+C dan deactive mode virtual environment.
@@ -34,7 +34,7 @@ DCloud. (2024). Mengenal Apa Itu Git dan Fungsinya dalam Software Development. R
 Fazry. (2024). Pengantar Django ORM: Memahami dan Menggunakan Model dalam Django. Retrieved September 10, 2024, from https://rumahcoding.co.id/pengantar-django-orm-memahami-dan-menggunakan-model-dalam-django/
 
 
-## Jawaban pertanyaan Tugas Individu 3
+## Tugas Individu 3
 ****1. Jelaskan mengapa kita memerlukan *data delivery* dalam pengimplementasian sebuah platform?****
 Karena suatu platform pastinya butuh pertukaran data dan biasanya data-data dikirimkan dalam stack ke stack lain. Butuh pengelolaan dan pengoptimalan dalam pengirimannya.
 
@@ -71,3 +71,34 @@ JSON by ID
 Referensi:
 Amazon. (n. d). Apa Perbedaan antara JSON dan XML? Retrieved September 17, 2024, from https://aws.amazon.com/id/compare/the-difference-between-json-xml/
 Codingstudio. (2023). CSRF (Cross Site Request Forgery): Pengertian, Jenis dan Cara Mencegahnya. Retrieved September 17, 2024, from https://codingstudio.id/blog/csrf-adalah/
+
+## Tugas Individu 4
+
+****1. Apa perbedaan antara `HttpResponseRedirect()` dan `redirect()`****
+
+HttpResponseRedirect() argumen utamanya harus sebuah url, sedangkan Redirect() dapat menerima model, view atau url sebagai argumennya. Redirect() juga dapat mengarahkan pengguna ke halaman web lain dan mengembalikan HttpResponseRedirect(), sehingga redirect lebih fleksibel.
+
+****2. Jelaskan cara kerja penghubungan model `Product` dengan `User`!****
+
+Penghubungan suatu model dengan user melalui suatu relation antara products yang tertaut oleh seorang pengguna atau disebut ForeignKey. Penghubungan dilakukan dengan mengotorisasi objek dengan user (Sebelum disimpan, field user akan mereturn request.user yang sedang login untuk menvalidasi).
+
+****3. Apa perbedaan antara *authentication* dan *authorization*, apakah yang dilakukan saat pengguna login? Jelaskan bagaimana Django mengimplementasikan kedua konsep tersebut.****
+
+*Authentication* adalah proses login atau memverifikasi identitas pengguna. Sedangkan *Authorization* adalah izin akses/permission yang diberikan sesuai pengguna/role dalam mengakses data/sistem/fungsi halaman web. Saat pengguna login, sistem akan memverifikasi siapa pengguna dan menentukan hak aksesnya.
+Dalam membuat proses login, Django menyediakan fungsi tersendiri yang dapat diimport langsung untuk mempermudah proses *authorization* dan *authentication.* 
+
+****4. Bagaimana Django mengingat pengguna yang telah login? Jelaskan kegunaan lain dari *cookies* dan apakah semua cookies aman digunakan?****
+
+Session ID adalah suatu barisan karakter unik yang menjadi sebuah token untuk mengidentifikasi pengguna. Django akan mengingat pengguna login dengan session ID yang disimpan sebagai cookie pada browser. Selain itu, cookie juga dapat menyimpan sesi login, mengingat preferensi situs, mempersonalisai konten dan menampilkan iklan (Telkomsel, 2022). Akan tetapi, sekalipun cookie disimpan dari sisi perangkat pengguna, terdapat website mencurigakan yang dapat mencuri data-data yang terekam cookie.
+
+****5. Jelaskan bagaimana cara kamu mengimplementasikan *checklist* di atas secara *step-by-step* (bukan hanya sekadar mengikuti tutorial).****
+
+Pertama adalah membuat sebuah form untuk pengguna mensubmit suatu data. Buat fungsi register dan fungsi login pada [views.py] untuk membuat akun serta login pengguna. Lalu buatlah register.html dan login.html sebagai templatenya. Kemudian, routing fungsi register dan fungsi login yang sudah dibuat pada urlpatterns di main/[urls.py].  Setelah itu, buat fungsi logout pada views.py serta tambahkan hyperlink tag code html di main.html. Lalu, routing fungsi tersebut di urls.py. 
+
+Selanjutnya merestriksi akses halaman main. Tambahkan @login_required pada fungsi show_main di views.py. Pada step ini menambahkan cookie pada validasi login. Kemudian, memanfaatkan cookies untuk menyimpan sesi login pengguna dengan membuat fungsi validasi saat login dan menyimpan last login. Lalu, tambahkan last login pada context di show_main. Kemudian, pastikan fungsi logout terdapat code yang akan menghapus cookie ketika pengguna logout. Setelah itu, tambahkan last login pada template main.html. 
+
+Selanjutnya, menghubungkan user dan model. Tambahkan atribut user untuk mengotorisasi data dan penggunanya. Lalu, pada views yaitu fungsi create_product_entry buat code validasi user yang mengisi form baru menyimpannya. Kemudian, ubah value dictionary name pada context menjadi request user yang login. Setelah itu, lakukan migration dan migrate.
+
+Referensi: StackOverflow. (2014). What the difference between using Django redirect and HttpResponseRedirect? Retrieved September 23, 2024, from https://stackoverflow.com/questions/13304149/what-the-difference-between-using-django-redirect-and-httpresponseredirect
+Telkomsel. (2022). Cookies Adalah? Pengertian, Fungsi, Jenis, dan Cara Kerjanya. Retrieved September 24, 2024, from https://www.telkomsel.com/jelajah/jelajah-lifestyle/cookies-adalah-pengertian-fungsi-jenis-dan-cara-kerjanya
+Vivi, S. (2021). Cookies Browser: Fungsi, Keamanan, dan Cara Mengelolanya. Retrieved September 24, 2024, from https://www.exabytes.co.id/blog/cookies-browser-adalah/
