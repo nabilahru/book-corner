@@ -17,7 +17,7 @@ Dalam mengimplementasikan MVT, pertama adalah membuka cmd dan pastikan berada pa
 Terakhir melakukan deployment ke PWS. Pertama lakukan create new project bernama book-corner dan menyimpan credential. Lalu hubungkan pws dengan direktori menggunakan perintah ke cmd “git remote add pws http://pbp.cs.ui.ac.id/nabilah.roslita/bookcorner”. Kemudian “git branch -M master”, “git push pws master”. Setelah itu, proyek sudah ada pada pws dan dapat diakses secara online.
 
 ****2. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.****
-![alt text](https://github.com/nabilahru/book-corner/blob/main/Bagan%20Request%20Client%C2%A0ke%20Web%20Aplikasi%20Django.png?raw=true)
+![alt text](https://github.com/nabilahru/book-corner/blob/main/picture/Bagan%20Request%20Client%C2%A0ke%20Web%20Aplikasi%20Django.png?raw=true)
 
 ****3. Jelaskan fungsi `git` dalam pengembangan perangkat lunak!****
 git berfungsi sebagai alat untuk menyimpan, mengelola, mengontrol, serta berkolaborasi kode yang dikerjakan secara bersama atau banyak orang (DCloud, 2024).
