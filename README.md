@@ -102,3 +102,35 @@ Selanjutnya, menghubungkan user dan model. Tambahkan atribut user untuk mengotor
 Referensi: StackOverflow. (2014). What the difference between using Django redirect and HttpResponseRedirect? Retrieved September 23, 2024, from https://stackoverflow.com/questions/13304149/what-the-difference-between-using-django-redirect-and-httpresponseredirect
 Telkomsel. (2022). Cookies Adalah? Pengertian, Fungsi, Jenis, dan Cara Kerjanya. Retrieved September 24, 2024, from https://www.telkomsel.com/jelajah/jelajah-lifestyle/cookies-adalah-pengertian-fungsi-jenis-dan-cara-kerjanya
 Vivi, S. (2021). Cookies Browser: Fungsi, Keamanan, dan Cara Mengelolanya. Retrieved September 24, 2024, from https://www.exabytes.co.id/blog/cookies-browser-adalah/
+
+## Tugas Individu 5
+
+**1. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!**
+Urutan prioritas CSS dari yang paling kuat:
+- ID Selector (#): Mengelompokkan berdasarkan id yang unik. Biasanya untuk style khusus seperti judul utama.
+- Class Selector (.): Mengelompokkan beberapa elemen dengan suatu (.namaclass). Untuk konsistensi desain.
+- Element Selector (tanpa # / .): Mengelompokkan elemen berdasarkan jenisnya. Misalnya, p untuk paragraf.
+- Universal selector(*): Mengelompokkan semua elemen pada suatu dokumen. Ini akan mengatur style pada seluruh elemen di halaman web.
+
+**2. Mengapa *responsive design* menjadi konsep yang penting dalam pengembangan aplikasi *web*? Berikan contoh aplikasi yang sudah dan belum menerapkan *responsive design*!**
+*Responsive design* adalah suatu website yang designnya otomatis akan selalu menyesuaikan *screensize* dan *viewports*. Jadi, *responsive design* sangat penting bagi suatu *website*, karena *devices* pengguna yang bermacam-macam membutuhkan *website* yang dapat menyesuaikannya. *Responsive design* akan membuat tampilan *website* yang sesuai sehingga tetap bagus diakses di *device* manapun.
+
+**3. Jelaskan perbedaan antara *margin*, *border*, dan *padding*, serta cara untuk mengimplementasikan ketiga hal tersebut!**
+Ketiga hal tersebut merupakan box model pada CSS yang membungkus tiap elemen html, perbedaannya terletak pada tingkatannya:
+- *Padding*: Mengosongkan area di sekitar konten dan membungkusnya. (transparan)
+- *Border*: Membungkus padding yang berisi konten. Semacam garis tepi padding.
+- *Margin*: Area di sekitar border yang kosong. (transparan)
+
+**4. Jelaskan konsep *flex box* dan *grid layout* beserta kegunaannya!**
+*Flex box* adalah pengaturan *layout* pada CSS, digunakan untuk mengatur *container* atau elemen di dalam suatu web. 
+*Grid Layout* memberikan modul *grid-based* untuk sistemnya berdasarkan kolom dan baris. Kegunaannya untuk mempermudah letak design suatu website.
+
+**5. Jelaskan bagaimana cara kamu mengimplementasikan *checklist* di atas secara *step-by-step* (bukan hanya sekadar mengikuti tutorial)!**
+
+Pertama-tama adalah Menambahkan fungsi edit_product dan delete_product pada views.py. Lakukan routing urls untuk mengakses fungsi yang sudah dibuat. Selanjutnya membuat template dengan tailwind. Tambahkan CDN (*Content Delivery Network*) pada bagian head. Kemudian, membuat navbar.html untuk versi desktop dan mobile yang bersifat responsive. Lalu, tambahkankan *middleware* WhiteNoise agar Django dapat mengelola file statis. Styling login.html, register.html, card_product.html, create_product_entry.html, edit_product.html dengan tailwind. Lalu, apabila membutuhkan file statis, tambahkan load static pada awal tiap file yang membutuhkan.
+
+Referensi:
+Pratama, M. A. (2021). *Mengenal Flexbox Pada CSS*. Retrieved September 30, 2024, from https://www.gamelab.id/news/817-mengenal-flexbox-pada-css
+Revou. (n.d.). *CSS Selectors: Jenis, Cara Membuat, dan Contoh*. Retrieved September 30, 2024, from https://revou.co/panduan-teknis/css-selectors
+W3School. (n.d.). *CSS Grid Layout Module*. Retrieved September 30, 2024, from https://www.w3schools.com/CSS/css_grid.asp
+W3School. (n.d.). *HTML Responsive Web Design*. Retrieved September 30, 2024, from https://www.w3schools.com/html/html_responsive.asp
