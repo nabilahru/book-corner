@@ -114,6 +114,8 @@ Urutan prioritas CSS dari yang paling kuat:
 
 **2. Mengapa *responsive design* menjadi konsep yang penting dalam pengembangan aplikasi *web*? Berikan contoh aplikasi yang sudah dan belum menerapkan *responsive design*!**
 *Responsive design* adalah suatu website yang designnya otomatis akan selalu menyesuaikan *screensize* dan *viewports*. Jadi, *responsive design* sangat penting bagi suatu *website*, karena *devices* pengguna yang bermacam-macam membutuhkan *website* yang dapat menyesuaikannya. *Responsive design* akan membuat tampilan *website* yang sesuai sehingga tetap bagus diakses di *device* manapun.
+Contoh website tidak responsive: Siak-NG
+Contoh website responsive: Tailwind
 
 **3. Jelaskan perbedaan antara *margin*, *border*, dan *padding*, serta cara untuk mengimplementasikan ketiga hal tersebut!**
 Ketiga hal tersebut merupakan box model pada CSS yang membungkus tiap elemen html, perbedaannya terletak pada tingkatannya:
