@@ -136,3 +136,24 @@ Pratama, M. A. (2021). *Mengenal Flexbox Pada CSS*. Retrieved September 30, 2024
 Revou. (n.d.). *CSS Selectors: Jenis, Cara Membuat, dan Contoh*. Retrieved September 30, 2024, from https://revou.co/panduan-teknis/css-selectors
 W3School. (n.d.). *CSS Grid Layout Module*. Retrieved September 30, 2024, from https://www.w3schools.com/CSS/css_grid.asp
 W3School. (n.d.). *HTML Responsive Web Design*. Retrieved September 30, 2024, from https://www.w3schools.com/html/html_responsive.asp
+
+## Tugas Individu 5
+
+**1. Jelaskan manfaat dari penggunaan JavaScript dalam pengembangan aplikasi web!**
+Javascript bermanfaat untuk menjadikan halaman website menjadi lebih dinamis. Browser akan merespon request pengguna dan mengelola tata letak konten pada halaman website sesuai device pengguna.
+
+**2. Jelaskan fungsi dari penggunaan `await` ketika kita menggunakan `fetch()`! Apa yang akan terjadi jika kita tidak menggunakan `await`?**
+Fungsi `await`dapat memudahkan pengimplementasian AJAX tanpa perlu menggunakan library eksternal. Penggunaannya adalah menunggu hasil fungsi `async`yang menandai fungsi sebagai fungsi yang dapat mengembalikan nilai secara *asyncronus.* Tanpa await, promise yang dihasilkan kemungkinan dapat berupa hasil fetch yang belum selesai.
+
+**3. Mengapa kita perlu menggunakan *decorator***  `csrf_exempt` **pada *view* yang akan digunakan untuk AJAX `POST`?**
+`csrf_exempt` dapat membuat Django tidak perlu mengecek  `csrf_token` pada POST request.
+
+**4. Pada tutorial PBP minggu ini, pembersihan data *input* pengguna dilakukan di belakang (*backend*) juga. Mengapa hal tersebut tidak dilakukan di *frontend* saja?**
+Frontend biasanya membantu ux website bagi pengguna. Pada frontend keamanan data sangat krusial, karena memungkinkan orang berniat jahat untuk memanipulasi input data. Adanya celah keamanan ini biasa disebut *Cross Site Scripting* (XSS). Sehingga sebagai pertahanan kita menggunakan backend untuk melakukan pembersihan input data dan memvalidasinya.
+
+**5. Jelaskan bagaimana cara kamu mengimplementasikan *checklist* di atas secara *step-by-step* (bukan hanya sekadar mengikuti tutorial)!**
+Pertama adalah membuat fungsi pada [views.py] untuk menambahkan produk dan buat fungsi javascript addproduct yang menggunakan AJAX. Lalu lakukan routing path fungsi tersebut. Kemudian, manfaatkan fetch() API untuk mengambil data yang sudah di filter agar milik pengguna yang *logged in* yang datanya ditampilkan. Setelah itu, buat fungsi untuk refreshproduct, modal untuk merefresh data product yang diinput.
+Selanjutnya membersihkan data input sebelumnya dan menutup celah keamanan dengan menggunakan strip_tags pada method add di [views.py] dan method clean di form.py. 
+
+**Referensi**: 
+Amazon. (n.d.). *Apa Itu JavaScript (JS)?* Retrieved October 7, 2024, from https://aws.amazon.com/id/what-is/javascript/#:~:text=JavaScript muncul sebagai teknologi sisi,letak konten di halaman web.
