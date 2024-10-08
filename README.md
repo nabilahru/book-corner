@@ -137,7 +137,7 @@ Revou. (n.d.). *CSS Selectors: Jenis, Cara Membuat, dan Contoh*. Retrieved Septe
 W3School. (n.d.). *CSS Grid Layout Module*. Retrieved September 30, 2024, from https://www.w3schools.com/CSS/css_grid.asp
 W3School. (n.d.). *HTML Responsive Web Design*. Retrieved September 30, 2024, from https://www.w3schools.com/html/html_responsive.asp
 
-## Tugas Individu 5
+## Tugas Individu 6
 
 **1. Jelaskan manfaat dari penggunaan JavaScript dalam pengembangan aplikasi web!**
 Javascript bermanfaat untuk menjadikan halaman website menjadi lebih dinamis. Browser akan merespon request pengguna dan mengelola tata letak konten pada halaman website sesuai device pengguna.
