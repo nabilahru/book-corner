@@ -1,4 +1,4 @@
-# Tugas Individu 
+# Book Corner
 
 Nama    : Nabilah Roslita Utami  
 NPM     : 2306223446  
@@ -156,5 +156,5 @@ Frontend biasanya membantu ux website bagi pengguna. Pada frontend keamanan data
 Pertama adalah membuat fungsi pada [views.py] untuk menambahkan produk dan buat fungsi javascript addproduct yang menggunakan AJAX. Lalu lakukan routing path fungsi tersebut. Kemudian, manfaatkan fetch() API untuk mengambil data yang sudah di filter agar milik pengguna yang *logged in* yang datanya ditampilkan. Setelah itu, buat fungsi untuk refreshproduct, modal untuk merefresh data product yang diinput.
 Selanjutnya membersihkan data input sebelumnya dan menutup celah keamanan dengan menggunakan strip_tags pada method add di [views.py] dan method clean di form.py. 
 
-**Referensi**:   
+**Referensi**:  
 Amazon. (n.d.). *Apa Itu JavaScript (JS)?* Retrieved October 7, 2024, from https://aws.amazon.com/id/what-is/javascript/#:~:text=JavaScript muncul sebagai teknologi sisi,letak konten di halaman web.
